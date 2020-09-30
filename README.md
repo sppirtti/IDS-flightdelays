@@ -1,6 +1,4 @@
 
-Welcome to new project!
-
-
+Welcome to the project!
 
 https://sppirtti.github.io/IDS-flightdelays/
