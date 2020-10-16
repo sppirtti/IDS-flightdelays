@@ -4,76 +4,83 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
-* {
-  box-sizing: border-box;
+body, html {
+  height: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: src="mike-waz.jpg";
+  min-height: 75%;
 }
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+
+.menu {
+  display: none;
 }
 </style>
-<body class="w3-light-grey">
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
-<div class="topnav">
-  <a href="https://sppirtti.github.io/IDS-flightdelays/">Flight Delays</a>
-  <a href="https://github.com/sppirtti/IDS-flightdelays">Repository</a>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="https://sppirtti.github.io/IDS-flightdelays/" class="w3-button w3-block w3-black">Flight Delays</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="https://github.com/sppirtti/IDS-flightdelays" class="w3-button w3-block w3-black">Repository</a>
+    </div>
+   
+  </div>
 </div>
-<!-- Grid -->
-<div class="w3-row">
-<!-- Blog entries -->
-<div class="w3-col l8 s12"  margin:0 auto>
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 6am to 5pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Adr street, 5015</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <div class="w3-card-4 w3-margin w3-white">
     <img src="plots/ids_cormatrix.png" style="width:100%">
     <div class="w3-container">
-      <h3><b>TITLE HEADING</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
+      <h3><b>Correlation matrix</b></h3>
+      <h5>Correlation matrix, <span class="w3-opacity">okke</span></h5>
     </div>
+
     <div class="w3-container">
       <p>From the correlation matrix we can see that there seems to be only a little correlation to none on the variables. This said we could not really choose better variables to examine from this data and flights' delays are mostly could not be predicted because of the randomness.
 </p>
-      <div class="w3-row">
-        
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
-        </div>
-      </div>
+     
     </div>
   </div>
-  <hr>
-  
-<!-- END BLOG ENTRIES -->
+  </div>
 </div>
-<!-- END GRID -->
-</div><br>
-<!-- END w3-content -->
+
+<!-- End page content -->
 </div>
+
 <!-- Footer -->
-<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+<footer class="w3-center w3-dark-grey w3-padding-48 w3-large">
   <p>Introduction to Data Science course project by Samuli Pirttimäki, Pyry Halonen and Aleksi Paavonen</p>
 </footer>
+
+
+
 </body>
 </html>
