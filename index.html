@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Flight delays</title>
-<meta charset="utf-8">
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-/* Style the top navigation bar */
 .topnav {
   overflow: hidden;
   background-color: #333;
 }
-
 /* Style the topnav links */
 .topnav a {
   float: left;
@@ -30,45 +27,53 @@ body {
   padding: 14px 16px;
   text-decoration: none;
 }
-
 /* Change color on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
-
-/* Style the content */
-.content {
-  background-color: #ddd;
-  padding: 10px;
-  height: 10000px;
-}
-
-/* Style the footer */
-.footer {
-  height: 50px;
-  margin-top: -50px;
-}
 </style>
-</head>
-<body>
-
+<body class="w3-light-grey">
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
 <div class="topnav">
   <a href="https://sppirtti.github.io/IDS-flightdelays/">Flight Delays</a>
   <a href="https://github.com/sppirtti/IDS-flightdelays">Repository</a>
 </div>
-
-<div class="content">
-  <h2>Flight Delays</h2>
-  <p>As data we used United States national flights from June, 2019. The dataset contained over 600 000 flights.</p>
-  <img src="plots/ids_cormatrix.png" />
-
-
+<!-- Grid -->
+<div class="w3-row">
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="plots/ids_cormatrix.png" style="width:100%">
+    <div class="w3-container">
+      <h3><b>TITLE HEADING</b></h3>
+      <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
+    </div>
+    <div class="w3-container">
+      <p>From the correlation matrix we can see that there seems to be only a little correlation to none on the variables. This said we could not really choose better variables to examine from this data and flights' delays are mostly could not be predicted because of the randomness.
+</p>
+      <div class="w3-row">
+        
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  
+<!-- END BLOG ENTRIES -->
 </div>
-
-<div class="footer">
+<!-- END GRID -->
+</div><br>
+<!-- END w3-content -->
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
   <p>Introduction to Data Science course project by Samuli Pirttimäki, Pyry Halonen and Aleksi Paavonen</p>
-</div>
-
+</footer>
 </body>
 </html>
