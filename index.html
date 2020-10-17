@@ -14,7 +14,7 @@ body, html {
 .bgimg {
   background-position: center;
   background-size: cover;
-  background-image: url("https://lh3.googleusercontent.com/proxy/AvIwwfUlSmWi6-zf9YeQL-3BNO1OsCPrb0TneZY-B3533tqvLTqfQvH_8jqP4mR7IgB85Usm-T22JYH89DNt5ldrwm4mHzHm8TDLOSlrx0kc3gLOVyCORg");
+  background-image: url(cursed-pic.jpg);
   min-height: 75%;
 }
 
@@ -97,6 +97,29 @@ body, html {
 </div>
 </div>
 </div>
+  
+  
+  
+  
+  
+        <div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <div class="w3-card-4 w3-margin w3-white">
+    <img src="plots/ids_log.png" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Logistic model</b></h3>
+      <h5>Masi <span class="w3-opacity">Pallopää</span></h5>
+    </div>
+    <div class="w3-container">
+      <p>On this logistic regression model we are explaining arrive delay over 15 minutes with two variables: day of week and distance (km). If the plane arrives 15 minutes or more late to its destination it gets the value 1, else 0. Day of week is categorical factor and gets values from 1 to 7. </p>
+<p>On significance level of 0.05 we can accept the null hypothesis of day of week but reject the distance. This means that on this model day of week has no effect on flights arriving late but distance has tiny amount of effect. Anyway both effects would be unnoticable because coefficient of day of week 0.002 is and distance's is 7e-05.</p>
+<p>On this logistic regression model we notice the same thing that in the linear model: the model does not fit well. Logistic regression model's deviance is large, 7e+05, meaning the the model is not suitable for this data. Smaller the deviance, better fit for the model. All in all the conclusions from this logistic regression model are not very accurate.
+</p>
+    </div>
+  </div>
+  </div>
+</div>
+  
   
   
   
