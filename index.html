@@ -77,6 +77,30 @@ body, html {
 
   
   
+  
+  
+<div class="w3-container" id="about">
+<div class="w3-content" style="max-width:700px">
+    <div class="w3-card-4 w3-margin w3-white">
+    <img src="plots/ids_linear.png" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Linear model</b></h3>
+      <h5>Masi <span class="w3-opacity">Pallopää</span></h5>
+    </div>
+    <div class="w3-container">
+      <p>On this linear regression model we are explaining arrive delay (min) with two variables: departure delay (min) and distance (km). It is selfexplanotary that if plane leaves late it will probably arrive late. It can be seen too in this model because departure delay's coefficient is 1.01. So if plane departures one minute late it arrives one minute late also meaning it will departure:arrive 1:1 by minutes.</p>
+      
+<p>Null hypothesis is that the distance and dep delay do not have relationship between arr delay. From summary we see that p-value for both departure delay and distance is 0, meaning we can reject the null hypothesis on significance level of 0.05. We conclude that distance and dep delay do have relationship between arr delay. The effect of distance is negative so from distance's coefficient , -0.0013, we see that further the plane flies the less it will arrive late. Altough the distance has a huge standard error , 3e-05, so our predictions of distance's effect to the arrive delay may not be accurate. </p>
+<p>R^2 and F-statistic both have large values indicating the model fits well to the data. It is mainly because dep delay and arr delay have such strong relationship.  By looking at the qq-plot we can conclude that the linear model is not suitable for this data as it should form a straight line, at least in the middle of the qq-plot. Therefore the conclusions from the model are inaccurate, statistically speaking.
+</p>
+</div>
+</div>
+</div>
+</div>
+  
+  
+  
+  
   <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
     <div class="w3-card-4 w3-margin w3-white">
