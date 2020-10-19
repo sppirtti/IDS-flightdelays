@@ -6,324 +6,385 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
-body, html {
-  height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  body,
+  html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-.bgimg {
-  background-position: center;
-  background-size: cover;
-  background-image: url(cursed-pic.jpg);
-  min-height: 75%;
-}
+  .bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url(cursed-pic.jpg);
+    min-height: 75%;
+  }
 
-.menu {
-  display: none;
-}
+  .menu {
+    display: none;
+  }
 </style>
+
 <body>
 
-<!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
-      <a href="https://sppirtti.github.io/IDS-flightdelays/" class="w3-button w3-block w3-black">Flight Delays</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="https://github.com/sppirtti/IDS-flightdelays" class="w3-button w3-block w3-black">Repository</a>
-    </div>
-   
-  </div>
-</div>
-
-<!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  
-  <div class="w3-display-middle w3-center">
-    <span class="w3-text-black" style="font-size:90px">Tämä on<br>Temptation Island</span>
-  </div>
-  
-</header>
-
-<!-- Add a background color and large text to the whole page -->
-<div class="w3-large w3-light-grey">
-
-  
-  
-   <div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <div class="w3-card-4 w3-margin w3-white">
-    <img src="sampusti/Tunnit wasted.png" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Hours wasted</b></h3>
-      <h5>Masi <span class="w3-opacity">Pallopää</span></h5>
-    </div>
-    <div class="w3-container">
-      <p>
-        This beautiful rainbow colored graph tells us a frustrating story of everyday travel. Thousands of hours wasted, just because planes get delayed. 
-        What if you could avoid these delays and save alot of time? As we can see from the graph, on a typical day we lose about 5000hours to delays. 
-        If you were to work at $15/h job for that amount of time, you would make $75 000. That's more than most peoples yearly salary. What if we could optimize our travel and reduce the hours lost to delays in half? Wouldn't that be a win/win situation for all of us?
-</p>
-    </div>
-  </div>
-  </div>
-</div>
-  
-  
-  
-  
-  
-  
-  <div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <div class="w3-card-4 w3-margin w3-white">
-    <div class="w3-row-padding w3-padding-16" id="about">
-    <div class="w3-col m6">
-      <img src="sampusti/delay syyt.png" style="width:100%">
-    </div>
-    <div class="w3-col m6">
-      <img src="sampusti/delay syyt KEY.png" style="width:100%">
-    </div>
-  </div>
-    <div class="w3-container">
-      <h3><b>Delay Reasons</b></h3>
-      <h5>jaha <span class="w3-opacity">jaha</span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p>Well why are planes delayed? There are 5 major delay categories into which all delays can be categorized into.  First there is carrier delays. Something in the schedules of the carrier did not add up and therefore a plane wasn't able to leave on time. Most common ones are maintenance and crew problems, aircraft cleaning, baggage loading, fueling, etc.</p>
-<p>Weather delay is surprisingly small percentage of the total. If I had to guess why a plane was late, I would most likely say due to weather, which most likely isn't true. Weather delays only are marked if the weather conditions are extreme such as a hurricane, tornado, blizzard or other dangerous conditions.</p>
-<p>NAS delay stands for National Aviation System delay. The NAS delays amount for the delays and cancellations attributable to the national aviation system that refer to a broad set of conditions, such as non-extreme weather conditions, airport operations, heavy traffic volume, and air traffic control.</p>
-<p>Security delays are delays or cancellations caused by evacuation of a terminal or concourse, re-boarding of aircraft because of security breach, inoperative screening equipment and/or long lines in excess of 29 minutes at screening areas.</p>
-<p>Late arriving aircraft delays are pretty self explanatory. The prevous flight was late, and now the next flight won't leave on time due to that.</p>
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s3">
+        <a href="https://sppirtti.github.io/IDS-flightdelays/" class="w3-button w3-block w3-black">Flight Delays</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="https://github.com/sppirtti/IDS-flightdelays" class="w3-button w3-block w3-black">Repository</a>
+      </div>
 
     </div>
   </div>
-  </div>
-</div>
-  
-  
- 
-  
-  
-  
-  
-  
-  <div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <div class="w3-card-4 w3-margin w3-white">
-    <div class="w3-row-padding w3-padding-16" id="about">
-    <div class="w3-col m6">
-      <img src="sampusti/delay weekday.png" style="width:100%">
-    </div>
-    <div class="w3-col m6">
-      <img src="sampusti/delay weekday key.png" style="width:100%">
-    </div>
-  </div>
-    <div class="w3-container">
-      <h3><b>Delays per weekday</b></h3>
-      <h5>jaha <span class="w3-opacity">jaha</span></h5>
+
+  <!-- Header with image -->
+  <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+    <div class="w3-display-middle w3-center">
+      <span class="w3-text-black" style="font-size:90px">Tämä on<br>Temptation Island</span>
     </div>
 
-    <div class="w3-container">
-      <p>Mä jokapäivä töitä teen</p>
+  </header>
 
-    </div>
-  </div>
-  </div>
-</div>
-  
-  
-  
-  
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <div class="w3-card-4 w3-margin w3-white">
-    <img src="sampusti/lennot del canc.png" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Delayed and cancelled flights</b></h3>
-      <h5>Masi <span class="w3-opacity">Pallopää</span></h5>
-    </div>
-    <div class="w3-container">
-      <p>
-        As can be seen from the plot, the amount of delayed flights seem to go up and down along the total amount of flights.
-      </p>
-    </div>
-  </div>
-  </div>
-</div>
-  
-  
-  
-  
-  <div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <div class="w3-card-4 w3-margin w3-white">
-    <img src="sampusti/delayt by carr.png" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Delay by carrier</b></h3>
-      <h5>Masi <span class="w3-opacity">Pallopää</span></h5>
-    </div>
-    <div class="w3-container">
-      <p>
-        tämä
-      </p>
-    </div>
-  </div>
-  </div>
-</div>
-  
-  
-  
-  
-<!-- About Container -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <div class="w3-card-4 w3-margin w3-white">
-    <img src="plots/ids_cluster.png" style="width:100%">
-    <div class="w3-row-padding w3-padding-16" id="about">
-    <div class="w3-col m6">
-      <img src="plots/ids_distortion.png" style="width:100%">
-    </div>
-    <div class="w3-col m6">
-      <img src="plots/ids_inertia.png" style="width:100%">
-    </div>
-  </div>
-    <div class="w3-container">
-      <h3><b>Clustering</b></h3>
-      <h5>Clustering, <span class="w3-opacity">jaha</span></h5>
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-large w3-light-grey">
+
+
+
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="sampusti/Tunnit wasted.png" style="width:100%">
+          <div class="w3-container">
+            <h3><b>Time Wasted by Delays</b></h3>
+            <h5>Masi <span class="w3-opacity">Pallopää</span></h5>
+          </div>
+          <div class="w3-container">
+            <p>
+              This beautiful rainbow colored graph tells us a frustrating story of everyday travel.
+              Thousands of hours wasted, just because planes get delayed.
+              What if you could avoid these delays and save alot of time?
+              As we can see from the graph, on a typical day we lose about 5000 hours to delays.
+              If you were to work at $15/h job for that amount of time, you would make $75 000.
+              That's more than most peoples yearly salary. What if we could optimize our travel and reduce the hours
+              lost to delays in half?
+              Wouldn't that be a win/win situation for all of us?
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="w3-container">
-      <p>To begin analysing the data we do clustering to label the data a bit. Plot's x-axis is distance (km) and y-axis is arrival delay (min). From the elbow method using distortion and inertia we set the k-means model by giving it the number of clusters 4 as a hyperparameter because on value 4 the line starts going linear. From the cluster plot we see that clusters' centers are placed in low values of y-axis and there are more flights with short and medium distances.</p>
-     
-    </div>
-  </div>
-  </div>
-</div>
 
-  
-  
-  
-  
-<div class="w3-container" id="about">
-<div class="w3-content" style="max-width:700px">
-    <div class="w3-card-4 w3-margin w3-white">
-    <img src="plots/ids_linear.png" style="width:100%">
-      <img src="plots/ids_linear_summary.PNG" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Linear model</b></h3>
-      <h5>Masi <span class="w3-opacity">Pallopää</span></h5>
-    </div>
-    <div class="w3-container">
-      <p>On this linear regression model we are explaining arrive delay (min) with two variables: departure delay (min) and distance (km). It is selfexplanotary that if plane leaves late it will probably arrive late. It can be seen too in this model because departure delay's coefficient is 1.01. So if plane departures one minute late it arrives one minute late also meaning it will departure:arrive 1:1 by minutes.</p>
-      
-<p>Null hypothesis is that the distance and dep delay do not have relationship between arr delay. From summary we see that p-value for both departure delay and distance is 0, meaning we can reject the null hypothesis on significance level of 0.05. We conclude that distance and dep delay do have relationship between arr delay. The effect of distance is negative so from distance's coefficient , -0.0013, we see that further the plane flies the less it will arrive late. Altough the distance has a huge standard error , 3e-05, so our predictions of distance's effect to the arrive delay may not be accurate. </p>
-<p>R^2 and F-statistic both have large values indicating the model fits well to the data. It is mainly because dep delay and arr delay have such strong relationship.  By looking at the qq-plot we can conclude that the linear model is not suitable for this data as it should form a straight line, at least in the middle of the qq-plot. Therefore the conclusions from the model are inaccurate, statistically speaking.
-</p>
-</div>
-</div>
-</div>
-</div>
-  
-  
-  
-  
-  
-        <div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <div class="w3-card-4 w3-margin w3-white">
-    <img src="plots/ids_log.png" style="width:100%">
-      <img src="plots/ids_log_summary.PNG" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Logistic model</b></h3>
-      <h5>Masi <span class="w3-opacity">Pallopää</span></h5>
-    </div>
-    <div class="w3-container">
-      <p>On this logistic regression model we are explaining arrive delay over 15 minutes with two variables: day of week and distance (km). If the plane arrives 15 minutes or more late to its destination it gets the value 1, else 0. Day of week is categorical factor and gets values from 1 to 7. </p>
-<p>On significance level of 0.05 we can accept the null hypothesis of day of week but reject the distance. This means that on this model day of week has no effect on flights arriving late but distance has tiny amount of effect. Anyway both effects would be unnoticable because coefficient of day of week 0.002 is and distance's is 7e-05.</p>
-<p>On this logistic regression model we notice the same thing that in the linear model: the model does not fit well. Logistic regression model's deviance is large, 7e+05, meaning the the model is not suitable for this data. Smaller the deviance, better fit for the model. All in all the conclusions from this logistic regression model are not very accurate.
-</p>
-    </div>
-  </div>
-  </div>
-</div>
-  
-  
-  
-  
-  
-        <div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <div class="w3-card-4 w3-margin w3-white">
-    <img src="plots/ids_rf.png" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Random forest</b></h3>
-      <h5>Masi <span class="w3-opacity">Pallopää</span></h5>
-    </div>
-    <div class="w3-container">
-      <p>We evaluated a random forest algorithm on this dataset's first 10 000 datapoints. It classified data by distance (km) and day of the week to see if the flight arrived late 15 minutes or more. Algorithm learned from training set size of 8 000 and predicted test set size of 2 000. The random forest classifier accuracy was about 67%. From the plot we see that increasing the amount of decision trees does not get better accuracy. It only has a small swing at the fewer decision trees .
-</p>
-    </div>
-  </div>
-  </div>
-</div>
-  
-  
-  
-  
-  
-  
-  <div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <div class="w3-card-4 w3-margin w3-white">
-    <img src="plots/ids_cormatrix.png" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Correlation matrix</b></h3>
-      <h5>Correlation matrix, <span class="w3-opacity">okke</span></h5>
+
+
+
+
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <div class="w3-card-4 w3-margin w3-white">
+          <div class="w3-row-padding w3-padding-16" id="about">
+            <div class="w3-col m6">
+              <img src="sampusti/delay syyt.png" style="width:100%">
+            </div>
+            <div class="w3-col m6">
+              <img src="sampusti/delay syyt KEY.png" style="width:100%">
+            </div>
+          </div>
+          <div class="w3-container">
+            <h3><b>Delay Reasons</b></h3>
+            <h5>jaha <span class="w3-opacity">jaha</span></h5>
+          </div>
+
+          <div class="w3-container">
+            <p>Well why are planes delayed? There are 5 major delay categories into which all delays can be categorized
+              into:</p>
+            <p> First there is carrier delays. Something in the schedules of the carrier did not add up and therefore a
+              plane wasn't able to leave on time. Most common ones are maintenance and crew problems, aircraft cleaning,
+              baggage loading, fueling, etc.</p>
+
+            <p> Weather delay is surprisingly small percentage of the total. If I had to guess why a plane was late, I
+              would most likely say due to weather, which most likely isn't true. Weather delays only are marked if the
+              weather conditions are extreme such as a hurricane, tornado, blizzard or other dangerous conditions.</p>
+
+            <p> NAS delay stands for National Aviation System delay. The NAS delays amount for the delays and
+              cancellations attributable to the national aviation system that refer to a broad set of conditions, such
+              as non-extreme weather conditions, airport operations, heavy traffic volume, and air traffic control.</p>
+
+            <p> Security delays are delays or cancellations caused by evacuation of a terminal or concourse, re-boarding
+              of aircraft because of security breach, inoperative screening equipment and/or long lines in excess of 29
+              minutes at screening areas.</p>
+
+            <p> Late arriving aircraft delays are pretty self explanatory. The prevous flight was late, and now the next
+              flight won't leave on time due to that.</p>
+
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="w3-container">
-      <p>From the correlation matrix we can see that there seems to be only a little correlation to none on the variables. This said we could not really choose better variables to examine from this data and flights' delays are mostly could not be predicted because of the randomness.
-</p>
-    </div>
-  </div>
-  </div>
-</div>
-  
-  
-  
-  
-  
-  <div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <div class="w3-card-4 w3-margin w3-white">
-    <img src="mike-waz.jpg" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Correlation matrix</b></h3>
-      <h5>Masi <span class="w3-opacity">Pallopää</span></h5>
-    </div>
-    <div class="w3-container">
-      <p>Masi
-      Masi
-      Masi</p>
-    </div>
-  </div>
-  </div>
-</div>
-  
-  
-  
-<!-- End page content -->
-</div>
 
-<!-- Footer -->
-<footer class="w3-center w3-dark-grey w3-padding-48 w3-large">
-  <p>Introduction to Data Science course project by Samuli Pirttimäki, Pyry Halonen and Aleksi Paavonen</p>
-</footer>
+
+
+
+
+
+
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <div class="w3-card-4 w3-margin w3-white">
+          <div class="w3-row-padding w3-padding-16" id="about">
+            <div class="w3-col m6">
+              <img src="sampusti/delay weekday.png" style="width:100%">
+            </div>
+            <div class="w3-col m6">
+              <img src="sampusti/delay weekday key.png" style="width:100%">
+            </div>
+          </div>
+          <div class="w3-container">
+            <h3><b>Delays by Weekday</b></h3>
+            <h5>jaha <span class="w3-opacity">jaha</span></h5>
+          </div>
+
+          <div class="w3-container">
+            <p>First lets take a look at on which day should you fly to avoid delays to best of your abilities.
+               Surprisingly there is close to no difference on which day you fly. Around 40% of the flights are delayed, on every single day. 
+               These delays do vary from few minutes up to hours. There are some days that are marginally better than other's, but none of the days stand out.
+               As we can see from the graph, the days that have more flights have more delays, but the ratio stays the same.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="sampusti/lennot del canc.png" style="width:100%">
+          <div class="w3-container">
+            <h3><b>Delayed and cancelled flights</b></h3>
+            <h5>Masi <span class="w3-opacity">Pallopää</span></h5>
+          </div>
+          <div class="w3-container">
+            <p>
+              As can be seen from the plot, the amount of delayed flights seem to go up and down along the total amount
+              of flights.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="sampusti/delayt by carr.png" style="width:100%">
+          <img src="sampusti/Airlines Key.png" style="width:100%">
+          <div class="w3-container">
+            <h3><b>Carrier caused Delays</b></h3>
+            <h5>Masi <span class="w3-opacity">Pallopää</span></h5>
+          </div>
+          <div class="w3-container">
+            <p>
+              As can be seen from the graph, Spirit airlines seems to have the smallest average delay that is caused by the carrier themselves. 
+              Other good ones are Frontier Airlines, Alaska Airlines, Republic Airlines. These carriers average around 15 minutes of delay, when it's caused by the carrier. 
+              Worst carriers to cause themself delays are ExpressJet, Hawaiian Airlines, Mesa Airlines and SkyWest Airlines. 
+              Their carrier caused delays are around 30 minutes, which is double of those mentioned earlier. 
+              Rest of the airlines fall somewhere between 15 and 30 minutes. So if your flight is going to get delayed by the carrier, I hope you chose the carrier well!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="plots/ids_cluster.png" style="width:100%">
+          <div class="w3-row-padding w3-padding-16" id="about">
+            <div class="w3-col m6">
+              <img src="plots/ids_distortion.png" style="width:100%">
+            </div>
+            <div class="w3-col m6">
+              <img src="plots/ids_inertia.png" style="width:100%">
+            </div>
+          </div>
+          <div class="w3-container">
+            <h3><b>Clustering</b></h3>
+            <h5>Clustering, <span class="w3-opacity">jaha</span></h5>
+          </div>
+
+          <div class="w3-container">
+            <p>To begin analysing the data we do clustering to label the data a bit. Plot's x-axis is distance (km) and
+              y-axis is arrival delay (min). From the elbow method using distortion and inertia we set the k-means model
+              by giving it the number of clusters 4 as a hyperparameter because on value 4 the line starts going linear.
+              From the cluster plot we see that clusters' centers are placed in low values of y-axis and there are more
+              flights with short and medium distances.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="plots/ids_linear.png" style="width:100%">
+          <img src="plots/ids_linear_summary.PNG" style="width:100%">
+          <div class="w3-container">
+            <h3><b>Linear model</b></h3>
+            <h5>Masi <span class="w3-opacity">Pallopää</span></h5>
+          </div>
+          <div class="w3-container">
+            <p>On this linear regression model we are explaining arrive delay (min) with two variables: departure delay
+              (min) and distance (km). It is selfexplanotary that if plane leaves late it will probably arrive late. It
+              can be seen too in this model because departure delay's coefficient is 1.01. So if plane departures one
+              minute late it arrives one minute late also meaning it will departure:arrive 1:1 by minutes.</p>
+
+            <p>Null hypothesis is that the distance and dep delay do not have relationship between arr delay. From
+              summary we see that p-value for both departure delay and distance is 0, meaning we can reject the null
+              hypothesis on significance level of 0.05. We conclude that distance and dep delay do have relationship
+              between arr delay. The effect of distance is negative so from distance's coefficient , -0.0013, we see
+              that further the plane flies the less it will arrive late. Altough the distance has a huge standard error
+              , 3e-05, so our predictions of distance's effect to the arrive delay may not be accurate. </p>
+            <p>R^2 and F-statistic both have large values indicating the model fits well to the data. It is mainly
+              because dep delay and arr delay have such strong relationship. By looking at the qq-plot we can conclude
+              that the linear model is not suitable for this data as it should form a straight line, at least in the
+              middle of the qq-plot. Therefore the conclusions from the model are inaccurate, statistically speaking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="plots/ids_log.png" style="width:100%">
+          <img src="plots/ids_log_summary.PNG" style="width:100%">
+          <div class="w3-container">
+            <h3><b>Logistic model</b></h3>
+            <h5>Masi <span class="w3-opacity">Pallopää</span></h5>
+          </div>
+          <div class="w3-container">
+            <p>On this logistic regression model we are explaining arrive delay over 15 minutes with two variables: day
+              of week and distance (km). If the plane arrives 15 minutes or more late to its destination it gets the
+              value 1, else 0. Day of week is categorical factor and gets values from 1 to 7. </p>
+            <p>On significance level of 0.05 we can accept the null hypothesis of day of week but reject the distance.
+              This means that on this model day of week has no effect on flights arriving late but distance has tiny
+              amount of effect. Anyway both effects would be unnoticable because coefficient of day of week 0.002 is and
+              distance's is 7e-05.</p>
+            <p>On this logistic regression model we notice the same thing that in the linear model: the model does not
+              fit well. Logistic regression model's deviance is large, 7e+05, meaning the the model is not suitable for
+              this data. Smaller the deviance, better fit for the model. All in all the conclusions from this logistic
+              regression model are not very accurate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="plots/ids_rf.png" style="width:100%">
+          <div class="w3-container">
+            <h3><b>Random forest</b></h3>
+            <h5>Masi <span class="w3-opacity">Pallopää</span></h5>
+          </div>
+          <div class="w3-container">
+            <p>We evaluated a random forest algorithm on this dataset's first 10 000 datapoints. It classified data by
+              distance (km) and day of the week to see if the flight arrived late 15 minutes or more. Algorithm learned
+              from training set size of 8 000 and predicted test set size of 2 000. The random forest classifier
+              accuracy was about 67%. From the plot we see that increasing the amount of decision trees does not get
+              better accuracy. It only has a small swing at the fewer decision trees .
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="plots/ids_cormatrix.png" style="width:100%">
+          <div class="w3-container">
+            <h3><b>Correlation matrix</b></h3>
+            <h5>Correlation matrix, <span class="w3-opacity">okke</span></h5>
+          </div>
+
+          <div class="w3-container">
+            <p>From the correlation matrix we can see that there seems to be only a little correlation to none on the
+              variables. This said we could not really choose better variables to examine from this data and flights'
+              delays are mostly could not be predicted because of the randomness.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="mike-waz.jpg" style="width:100%">
+          <div class="w3-container">
+            <h3><b>Correlation matrix</b></h3>
+            <h5>Masi <span class="w3-opacity">Pallopää</span></h5>
+          </div>
+          <div class="w3-container">
+            <p>Masi
+              Masi
+              Masi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- End page content -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-dark-grey w3-padding-48 w3-large">
+    <p>Introduction to Data Science course project by Samuli Pirttimäki, Pyry Halonen and Aleksi Paavonen</p>
+  </footer>
 
 
 
 </body>
+
 </html>
